@@ -16,6 +16,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    padding: 2rem 4rem;
 }
 
 header h1 {
@@ -42,12 +43,12 @@ header nav a {
 }
 
 header nav a:hover {
-    color: rgb(41, 252, 136)reen;
+    color: rgb(37, 192, 107)reen;
 }
 
 /* Main */
 main {
-    padding: 15rem;
+    padding: 5rem;
 
 }
 
@@ -94,7 +95,7 @@ main h2 {
   .form-layout legend {
     font-size: 1.1rem;
     font-weight: 600;
-    color: rgb(41, 252, 136);
+    color: rgb(0, 0, 0);
     padding: 0 0.5rem;
   }
   
@@ -128,13 +129,36 @@ main h2 {
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    gap: 1rem;
+    gap: 5rem;
 }
 .formularios{
     background-color: #f1f1f1;
     border-radius: 8px;
-
+    padding: 1rem;
 }
-.contaaa{
+output{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #20974e;
+    
+    
    
+}
+.fed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enviar{
+    background-color: rgb(25, 114, 65);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.enviar:hover {
+    background-color: rgb(41, 252, 136);
 }

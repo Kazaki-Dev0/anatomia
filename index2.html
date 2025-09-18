@@ -75,7 +75,7 @@
                     </datalist>
                   </fieldset>
     
-                  <fieldset>
+                  <fieldset class="preferencias">
                     <legend>Preferências</legend>
     
                     <label for="area_foco"
@@ -122,8 +122,55 @@
                         <label for="avancado">Avançado</label>
                       </div>
                     </div>
+                    <div class="interrese">
+                      <legend>Tecnologia de interrese</legend>
+                      <div>
+                        <input type="checkbox" id="htmlecss" name="htmlecss" />
+                        <label for="htmlecss">HTML & CSS</label>
+                      </div>
+                    
+                      <div>
+                        <input type="checkbox" id="js" name="js" />
+                        <label for="js">JavaScript</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="react" name="react" />
+                        <label for="react">React</label>
+                      </div>
+
+                    </div>
+                  </fieldset>
+                  <fieldset class="feedback">
+                    <legend>Feedback</legend>
+    
+                    <label for="satisfacao"
+                      >Nível de Satisfação com o Curso(0 a 100):</label
+                    >
+                    <input
+                      type="range"
+                      id="satisfacao"
+                      name="satisfacao"
+                      min="0"
+                      max="100"
+                      value="50"
+                      oninput="satisfacao_output.value = satisfacao.value"
+                    />
+                    <div class="fed">
+                    <output id="satisfacao_output">50</output>
+                     </div>
+                    <label for="comentarios">Comentários Adicionais:</label>
+                    <textarea
+                      id="comentarios"
+                      name="comentarios"
+                      rows="4"
+                      placeholder="Deixe seus comentários aqui..."
+                    ></textarea>
+    
+                    <button type="submit" class="enviar">Enviar</button>
                   </fieldset>
                 </form>
+
               </div>
               <div class="card-tag-highlight">
                 <p class="contaaa">
@@ -145,9 +192,9 @@
                   Note também os atributos <code>placeholder</code>, que exibe um
                   texto de ajuda no campo, e <code>required</code>, que torna seu
                   preenchimento obrigatório.
-                </p>
-                </div>
-                </section>
-                </main>
+               </p>
+              </div>
+             </section>
+            </main>
 </body>
 </html>
